@@ -26,8 +26,8 @@ def draw_cat_plot():
 
     # Draw the catplot with 'sns.catplot()'
     g = sns.catplot(
-        x='variable', hue='variable_value', col='cardio',
-        data=df_cat_grouped, kind='count'
+        x='variable', hue='variable_value',y='total', col='cardio',
+        data=df_cat_grouped, kind='bar'
     )
 
     # Set plot titles and axis labels
